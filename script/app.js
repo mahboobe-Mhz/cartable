@@ -150,3 +150,10 @@ const createIdDate = (id) => {
     id_data.appendChild(idNode);
     return id_data
 }
+
+const createFirstNameDate = (firstName) => {
+    let idNode = document.createTextNode(firstName);
+    let firstName_data = document.createElement('td');
+    firstName_data.appendChild(idNode);
+    return firstName_data
+}
