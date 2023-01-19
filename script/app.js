@@ -178,3 +178,10 @@ const createGenderDate = (gender) => {
     gender_data.appendChild(idNode);
     return gender_data;
 }
+
+const createProductDate = (product) => {
+    let idNode = document.createTextNode(product);
+    let product_data = document.createElement('td');
+    product_data.appendChild(idNode);
+    return product_data;
+}
