@@ -34,17 +34,20 @@ body{
     
     
 }
+.item:hover{
+    cursor: pointer;
+}
 .item1{
     flex: 1;
     padding-left: 10px;
-    padding-top:35px;
+    padding-top:25px;
 }
 .item2{
     flex: 6;
    
 }
 .item3{
-    padding:35px 10px;
+    padding:25px 10px;
     /* padding-top:35px; */
 }
 .input{
