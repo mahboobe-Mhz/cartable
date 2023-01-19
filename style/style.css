@@ -3,4 +3,11 @@
     width: 100%;
     height: 90px;
     background-color: #272c30;
+    
+}
+.box-item{
+    display: flex;
+}
+.item{
+    list-style: none;
 }
