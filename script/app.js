@@ -112,63 +112,63 @@ const addTableDate = () => {
 const createTableElement = (product) => {
     let tr = document.createElement('tr');
 
-    let id_data = createIdDate(product.id);
-    let firstName_data = createFirstNameDate(product.first_name);
-    let lastName_data = createLastNameDate(product.last_name);
-    let email_data = createEmailDate(product.email);
-    let gender_data = createGenderDate(product.gender);
-    let product_data = createGenderDate(product.product);
-    let phoneNumber_data = createPhoneDate(product.phone);
+    let id_data = createData(product.id);
+    let firstName_data = createData(product.first_name);
+    let lastName_data = createData(product.last_name);
+    let email_data = createData(product.email);
+    let gender_data = createData(product.gender);
+    let product_data = createData(product.product);
+    let phoneNumber_data = createData(product.phone);
 
     tr.appendChild(id_data, firstName_data, lastName_data, email_data, gender_data, product_data, phoneNumber_data);
     return tr;
 }
 
-const createIdDate = (id) => {
-    let idNode = document.createTextNode(id);
-    let id_data = document.createElement('td');
-    id_data.appendChild(idNode);
-    return id_data
+const createData = (data) => {
+    let Node = document.createTextNode(data);
+    let dataElement = document.createElement('td');
+    dataElement.appendChild(Node);
+    return dataElement;
 }
 
-const createFirstNameDate = (firstName) => {
-    let idNode = document.createTextNode(firstName);
-    let firstName_data = document.createElement('td');
-    firstName_data.appendChild(idNode);
-    return firstName_data
-}
+// const createFirstNameDate = (firstName) => {
+//     let idNode = document.createTextNode(firstName);
+//     let firstName_data = document.createElement('td');
+//     firstName_data.appendChild(idNode);
+//     return firstName_data
+// }
 
-const createLastNameDate = (lirstName) => {
-    let idNode = document.createTextNode(lirstName);
-    let lastName_data = document.createElement('td');
-    lastName_data.appendChild(idNode);
-    return lastName_data
-}
+// const createLastNameDate = (lirstName) => {
+//     let idNode = document.createTextNode(lirstName);
+//     let lastName_data = document.createElement('td');
+//     lastName_data.appendChild(idNode);
+//     return lastName_data
+// }
 
-const createEmailDate = (email) => {
-    let idNode = document.createTextNode(email);
-    let email_data = document.createElement('td');
-    email_data.appendChild(idNode);
-    return email_data;
-}
+// const createEmailDate = (email) => {
+//     let idNode = document.createTextNode(email);
+//     let email_data = document.createElement('td');
+//     email_data.appendChild(idNode);
+//     return email_data;
+// }
 
-const createGenderDate = (gender) => {
-    let idNode = document.createTextNode(gender);
-    let gender_data = document.createElement('td');
-    gender_data.appendChild(idNode);
-    return gender_data;
-}
+// const createGenderDate = (gender) => {
+//     let idNode = document.createTextNode(gender);
+//     let gender_data = document.createElement('td');
+//     gender_data.appendChild(idNode);
+//     return gender_data;
+// }
 
-const createProductDate = (product) => {
-    let idNode = document.createTextNode(product);
-    let product_data = document.createElement('td');
-    product_data.appendChild(idNode);
-    return product_data;
-}
+// const createProductDate = (product) => {
+//     let idNode = document.createTextNode(product);
+//     let product_data = document.createElement('td');
+//     product_data.appendChild(idNode);
+//     return product_data;
+// }
 
-const createPhoneDate = (phone) => {
-    let idNode = document.createTextNode(phone);
-    let phone_data = document.createElement('td');
-    phone_data.appendChild(idNode);
-    return phone_data;
-}
+// const createPhoneDate = (phone) => {
+//     let idNode = document.createTextNode(phone);
+//     let phone_data = document.createElement('td');
+//     phone_data.appendChild(idNode);
+//     return phone_data;
+// }
