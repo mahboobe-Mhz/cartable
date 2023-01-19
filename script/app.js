@@ -120,7 +120,7 @@ const createTableElement = (product) => {
     let product_data = createData(product.product);
     let phoneNumber_data = createData(product.phone);
 
-    tr.appendChild(id_data, firstName_data, lastName_data, email_data, gender_data, product_data, phoneNumber_data);
+    tr.append(id_data, firstName_data, lastName_data, email_data, gender_data, product_data, phoneNumber_data);
     return tr;
 }
 
