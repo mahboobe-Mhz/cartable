@@ -15,7 +15,7 @@ body{
     height: 90px;
     background-color: #272c30;
     /* padding: 10px; */
-    font-size:25px ;
+    font-size:1.5rem ;
     color: white;
 
 }
@@ -50,7 +50,7 @@ body{
 .input{
     height: 100%;
     width: 100%;
-   font-size: 20px;
+   font-size: 1.5rem;
    background-color: #494e54;
    padding-left: 10px;
 }
