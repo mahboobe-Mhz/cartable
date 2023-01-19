@@ -16,6 +16,7 @@
 .sidetop {
     color: rgb(0, 0, 0);
     font-size: 17px;
+    padding-top: 15px;
 }
 
 .sidebott {
@@ -30,9 +31,13 @@
 
 .savedreports {
     color: rgb(124, 124, 124);
-    padding-top: 25px;
+    padding: 25px 0px 7px 10px;
 }
 
 .sideplus {
     float: right;
+}
+
+.sidetext {
+    padding: 10px;
 }
