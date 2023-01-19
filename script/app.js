@@ -107,32 +107,38 @@ const addTableDate = () => {
         const tableRow = createTableElement(product);
         table.appendChild(tableRow);
     })
-    const tr = createTableElement
 }
 
 const createTableElement = (product) => {
     let tr = document.createElement('tr');
 
+    let idNode = document.createTextNode(product.id);
     let id_data = document.createElement('td');
-    id_data.innerHTML = product.id;
+    id_data.appendChild(idNode);
 
+    let firstNameNode = document.createTextNode(product.id);
     let firstName_data = document.createElement('td');
-    firstName_data.innerHTML = product.first_name;
+    firstName_data.appendChild(firstNameNode);
 
+    let lastNameNode = document.createTextNode(product.id);
     let lastName_data = document.createElement('td');
-    lastName_data.innerHTML = product.last_name;
+    lastName_data.appendChild(lastNameNode);
 
+    let emailNode = document.createTextNode(product.id);
     let email_data = document.createElement('td');
-    email_data.innerHTML = product.email;
+    email_data.appendChild(emailNode);
 
+    let genderNode = document.createTextNode(product.id);
     let gender_data = document.createElement('td');
-    gender_data.innerHTML = product.gender;
+    gender_data.appendChild(genderNode);
 
+    let productNode = document.createTextNode(product.id);
     let product_data = document.createElement('td');
-    product_data.innerHTML = product.product;
+    product_data.appendChild(productNode)
 
+    let phoneNumberNode = document.createTextNode(product.id);
     let phoneNumber_data = document.createElement('td');
-    phoneNumber_data.innerHTML = product.phoneNumber;
+    phoneNumber_data.appendChild(phoneNumberNode)
 
     tr.appendChild(id_data, firstName_data, lastName_data, email_data, gender_data, product_data, phoneNumber_data);
     return tr;
