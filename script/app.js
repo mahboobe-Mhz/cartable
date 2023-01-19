@@ -157,3 +157,10 @@ const createFirstNameDate = (firstName) => {
     firstName_data.appendChild(idNode);
     return firstName_data
 }
+
+const createLastNameDate = (lirstName) => {
+    let idNode = document.createTextNode(lirstName);
+    let lastName_data = document.createElement('td');
+    lastName_data.appendChild(idNode);
+    return lastName_data
+}
