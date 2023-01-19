@@ -171,3 +171,10 @@ const createEmailDate = (email) => {
     email_data.appendChild(idNode);
     return email_data;
 }
+
+const createGenderDate = (gender) => {
+    let idNode = document.createTextNode(gender);
+    let gender_data = document.createElement('td');
+    gender_data.appendChild(idNode);
+    return gender_data;
+}
