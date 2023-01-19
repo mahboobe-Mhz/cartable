@@ -143,3 +143,10 @@ const createTableElement = (product) => {
     tr.appendChild(id_data, firstName_data, lastName_data, email_data, gender_data, product_data, phoneNumber_data);
     return tr;
 }
+
+const createIdDate = (id) => {
+    let idNode = document.createTextNode(id);
+    let id_data = document.createElement('td');
+    id_data.appendChild(idNode);
+    return id_data
+}
