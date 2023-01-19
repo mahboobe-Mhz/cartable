@@ -185,3 +185,10 @@ const createProductDate = (product) => {
     product_data.appendChild(idNode);
     return product_data;
 }
+
+const createPhoneDate = (phone) => {
+    let idNode = document.createTextNode(phone);
+    let phone_data = document.createElement('td');
+    phone_data.appendChild(idNode);
+    return phone_data;
+}
