@@ -102,6 +102,13 @@ const orderArray = [{"id":1,"first_name":"Rickard","last_name":"Basson","email":
 
 const table = document.getElementById('table');
 
+const addTableDate = () => {
+    orderArray.forEach( (product) => {
+        const tableRow = createTableElement(product);
+        table.appendChild(tableRow);
+    })
+    const tr = createTableElement
+}
 
 const createTableElement = (product) => {
     let tr = document.createElement('tr');
