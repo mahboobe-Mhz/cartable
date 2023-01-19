@@ -164,3 +164,10 @@ const createLastNameDate = (lirstName) => {
     lastName_data.appendChild(idNode);
     return lastName_data
 }
+
+const createEmailDate = (email) => {
+    let idNode = document.createTextNode(email);
+    let email_data = document.createElement('td');
+    email_data.appendChild(idNode);
+    return email_data;
+}
