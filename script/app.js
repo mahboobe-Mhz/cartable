@@ -1,4 +1,4 @@
-const order = [{"id":1,"first_name":"Rickard","last_name":"Basson","email":"rbasson0@behance.net","gender":"Male","product":"Wine - Bourgogne 2002, La","phoneNumber":"+595 656 195 4650"},
+const orderArray = [{"id":1,"first_name":"Rickard","last_name":"Basson","email":"rbasson0@behance.net","gender":"Male","product":"Wine - Bourgogne 2002, La","phoneNumber":"+595 656 195 4650"},
 {"id":2,"first_name":"Eva","last_name":"Bewley","email":"ebewley1@com.com","gender":"Female","product":"Veal - Ground","phoneNumber":"+48 543 483 3011"},
 {"id":3,"first_name":"Meredith","last_name":"Ardley","email":"mardley2@yandex.ru","gender":"Female","product":"Broccoli - Fresh","phoneNumber":"+86 826 606 5163"},
 {"id":4,"first_name":"Cobby","last_name":"Moyser","email":"cmoyser3@msn.com","gender":"Male","product":"Horseradish - Prepared","phoneNumber":"+63 501 238 3273"},
@@ -98,3 +98,35 @@ const order = [{"id":1,"first_name":"Rickard","last_name":"Basson","email":"rbas
 {"id":98,"first_name":"Stacy","last_name":"Imlaw","email":"simlaw2p@economist.com","gender":"Male","product":"Milk - 2%","phoneNumber":"+358 197 738 1097"},
 {"id":99,"first_name":"Rutledge","last_name":"Batthew","email":"rbatthew2q@flickr.com","gender":"Male","product":"Grapefruit - White","phoneNumber":"+63 941 641 4703"},
 {"id":100,"first_name":"Leighton","last_name":"Ovett","email":"lovett2r@psu.edu","gender":"Male","product":"Cheese - Havarti, Roasted Garlic","phoneNumber":"+46 406 420 0423"}]
+
+
+const table = document.getElementById('table');
+
+
+const createTableElement = (product) => {
+    let tr = document.createElement('tr');
+
+    let id_data = document.createElement('td');
+    id_data.innerHTML = product.id;
+
+    let firstName_data = document.createElement('td');
+    firstName_data.innerHTML = product.first_name;
+
+    let lastName_data = document.createElement('td');
+    lastName_data.innerHTML = product.last_name;
+
+    let email_data = document.createElement('td');
+    email_data.innerHTML = product.email;
+
+    let gender_data = document.createElement('td');
+    gender_data.innerHTML = product.gender;
+
+    let product_data = document.createElement('td');
+    product_data.innerHTML = product.product;
+
+    let phoneNumber_data = document.createElement('td');
+    phoneNumber_data.innerHTML = product.phoneNumber;
+
+    tr.appendChild(id_data, firstName_data, lastName_data, email_data, gender_data, product_data, phoneNumber_data);
+    return tr;
+}
